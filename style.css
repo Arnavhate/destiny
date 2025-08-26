@@ -1,0 +1,33 @@
+:root{
+--bg:#0f1724;
+--card:#111827;
+--accent:#ffb703;
+--muted:#9ca3af;
+--glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{background:linear-gradient(180deg,var(--bg),#081023);color:#e6eef8}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:transparent}
+.brand{font-weight:700;font-size:1.1rem}
+nav a{color:var(--muted);margin-left:14px;text-decoration:none}
+nav a.cta{color:var(--bg);background:var(--accent);padding:8px 12px;border-radius:10px}
+.container{max-width:1100px;margin:30px auto;padding:0 20px}
+.hero{display:grid;grid-template-columns:1fr 480px;gap:24px;align-items:center}
+.hero-left h1{font-size:2rem;margin:0 0 10px}
+.hero-left p{color:var(--muted);margin:0 0 18px}
+.actions{display:flex;gap:12px}
+.download-btn{display:inline-block;background:transparent;border:2px solid var(--accent);color:var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+.play-btn{background:var(--accent);border:none;color:var(--bg);padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}
+.gameplay-slot{background:var(--glass);border-radius:12px;padding:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.gameplay-slot video{width:100%;height:100%;display:block;border-radius:8px}
+.features{margin-top:26px;background:rgba(255,255,255,0.02);padding:16px;border-radius:8px}
+footer{text-align:center;padding:22px;color:var(--muted)}
+
+
+/* Responsive */
+@media (max-width:900px){
+.hero{grid-template-columns:1fr;}
+.hero-right{order:-1}
+}
+
